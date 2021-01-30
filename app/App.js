@@ -4,7 +4,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import Provider from './Provider';
 import { dark } from './styles';
 
-import Popup from './components/Popup';
+import Home from './Home';
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <ThemeProvider theme={dark}>
         <Router>
           <Switch>
-            <Route path="/" render={props => <Popup />} />
+            <Route path="/" render={props => <Home />} />
           </Switch>
         </Router>
       </ThemeProvider>
